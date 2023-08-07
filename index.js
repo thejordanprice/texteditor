@@ -9,6 +9,7 @@ const newBtn = document.getElementById('newBtn');
 const saveBtn = document.getElementById('saveBtn');
 const loadBtn = document.getElementById('loadBtn');
 const deleteBtn = document.getElementById('deleteBtn');
+const previewBtn = document.getElementById('previewBtn')
 const currentFileName = document.getElementById('currentFileNameText');
 
 let currentFile = {
@@ -118,6 +119,12 @@ deleteBtn.addEventListener('click', () => {
         const modal = new bootstrap.Modal(document.getElementById('fileDeleteModal'));
         modal.show();
     }
+});
+
+previewBtn.addEventListener('click', function() {
+    var code = editor.getValue();
+    var previewWindow = window.open();
+    previewWindow.document.write(code);
 });
 
 function loadSelectedFile() {
