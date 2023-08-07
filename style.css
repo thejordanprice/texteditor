@@ -2,13 +2,15 @@
 
 /* Adjust the height of the CodeMirror text area */
 #container {
+    display: flex;
+    flex-direction: column;
     height: calc(100vh - 180px); /* Adjust this value as needed */
     margin-bottom: 15px;
 }
 
 /* Center the CodeMirror text area */
 .CodeMirror {
-    height: 100%;
+    flex-grow: 1;
 }
 
 /* Vertically center the current file name */
