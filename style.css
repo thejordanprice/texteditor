@@ -4,7 +4,7 @@
 #container {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 125px); /* Adjust this value as needed */
+    height: calc(100vh - 135px); /* Adjust this value as needed */
 }
 
 /* Center the CodeMirror text area */
