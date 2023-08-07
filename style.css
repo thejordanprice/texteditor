@@ -1,14 +1,18 @@
 /* style.css */
+
+/* Adjust the height of the CodeMirror text area */
+#container {
+    height: calc(100vh - 180px); /* Adjust this value as needed */
+    margin-bottom: 15px;
+}
+
+/* Center the CodeMirror text area */
+.CodeMirror {
+    height: 100%;
+}
+
+/* Vertically center the current file name */
 #currentFileName {
     display: flex;
     align-items: center;
-    margin-left: auto;
-}
-
-.mt-3 {
-    margin-top: 1rem;
-}
-
-.CodeMirror {
-    height: calc(100vh - 130px);
 }
